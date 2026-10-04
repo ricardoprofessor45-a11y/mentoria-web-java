@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mentoria individual em desenvolvimento web com Java e Spring Boot: lógica, POO, APIs REST, banco de dados e Git.">
+  <meta name="theme-color" content="#08783f">
+  <title>Mentoria Web Java | Java e Spring Boot</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2308783f'/%3E%3Cpath d='M17 17h11v8h-4v14c0 6 3 8 8 8v9c-12 0-17-6-17-17V25c0-5 0-8 2-8Zm30 0H36v8h4v14c0 6-3 8-8 8v9c12 0 17-6 17-17V25c0-5 0-8-2-8Z' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap nav">
+      <a class="brand" href="#inicio" aria-label="Voltar ao início">
+        <span class="brand-mark">&lt;/&gt;</span>
+        <span class="brand-text">Mentoria Web Java</span>
+      </a>
+      <nav class="nav-links" aria-label="Navegação principal">
+        <a href="#conteudos">Conteúdos</a>
+        <a href="#metodo">Como funciona</a>
+        <a href="#investimento">Investimento</a>
+        <a class="btn js-whatsapp" href="#contato">Agendar aula</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Aprender · Praticar · Evoluir</p>
+          <h1>Mentoria em <span>Desenvolvimento Web</span> com Java.</h1>
+          <p>Do primeiro algoritmo à construção de aplicações web profissionais com Spring Boot, APIs REST e banco de dados.</p>
+          <div class="hero-actions">
+            <a class="btn js-whatsapp" href="#contato">Agende sua aula no WhatsApp</a>
+            <a class="btn ghost" href="#conteudos">Ver o que você aprende</a>
+          </div>
+          <div class="trust" aria-label="Características da mentoria">
+            <span>Aulas individuais</span>
+            <span>Prática com projetos</span>
+            <span>Ritmo personalizado</span>
+          </div>
+        </div>
+
+        <div class="code-stage" aria-label="Exemplo visual de código Java com Spring Boot">
+          <div class="code-card">
+            <div class="code-top"><i class="dot"></i><i class="dot"></i><i class="dot"></i><span class="file-name">ProdutoController.java</span></div>
+            <pre><code><span class="an">@RestController</span>
+<span class="an">@RequestMapping</span>(<span class="st">"/api/produtos"</span>)
+<span class="kw">public class</span> <span class="ty">ProdutoController</span> {
+
+  <span class="kw">private final</span> ProdutoService service;
+
+  <span class="an">@GetMapping</span>
+  <span class="kw">public</span> List&lt;Produto&gt; listar() {
+    <span class="kw">return</span> service.listarTodos();
+  }
+}</code></pre>
+          </div>
+          <div class="chip one">Spring Boot</div>
+          <div class="chip two">REST API</div>
+          <div class="chip three">SQL</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="learn" id="conteudos">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Trilha de aprendizado</p>
+          <h2>Conhecimento para sair da teoria e criar.</h2>
+          <p>O conteúdo acompanha seu nível e seus objetivos. Cada conceito é explicado e aplicado em exercícios ou em um projeto real.</p>
+        </div>
+        <div class="skill-grid">
+          <article class="skill"><div class="skill-code">01</div><h3>Lógica de Programação</h3><p>Variáveis, condições, repetições, funções e resolução de problemas.</p></article>
+          <article class="skill"><div class="skill-code">02</div><h3>Java</h3><p>Sintaxe, tipos, coleções, exceções e boas práticas da linguagem.</p></article>
+          <article class="skill"><div class="skill-code">03</div><h3>POO</h3><p>Classes, objetos, encapsulamento, herança, interfaces e polimorfismo.</p></article>
+          <article class="skill"><div class="skill-code">04</div><h3>APIs REST</h3><p>Rotas, métodos HTTP, JSON, validações e respostas bem estruturadas.</p></article>
+          <article class="skill"><div class="skill-code">05</div><h3>Spring Boot</h3><p>Controllers, services, repositories, injeção de dependência e organização.</p></article>
+          <article class="skill"><div class="skill-code">06</div><h3>Banco de Dados</h3><p>Modelagem, SQL, MySQL/PostgreSQL, JPA e relacionamentos entre entidades.</p></article>
+          <article class="skill"><div class="skill-code">07</div><h3>Git e GitHub</h3><p>Versionamento, branches, commits e publicação organizada dos projetos.</p></article>
+          <article class="skill"><div class="skill-code">08</div><h3>Projeto Prático</h3><p>Planejamento, construção e evolução de uma aplicação do início ao fim.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="method" id="metodo">
+      <div class="wrap method-grid">
+        <div class="method-copy">
+          <p class="eyebrow">Acompanhamento de verdade</p>
+          <h2>Você aprende construindo, com orientação em cada etapa.</h2>
+          <p>Sem aulas genéricas: começamos pelo que você já sabe e avançamos com explicação clara, prática acompanhada e correção de código.</p>
+        </div>
+        <div class="steps">
+          <article class="step"><h3>Entendemos seu objetivo</h3><p>Primeiro emprego, faculdade, projeto próprio ou reforço técnico.</p></article>
+          <article class="step"><h3>Montamos sua rota</h3><p>Definimos os próximos assuntos e o ritmo mais adequado.</p></article>
+          <article class="step"><h3>Praticamos juntos</h3><p>Você escreve código, tira dúvidas e recebe orientação durante o processo.</p></article>
+          <article class="step"><h3>Evoluímos o projeto</h3><p>Cada aula gera um avanço concreto e prepara o passo seguinte.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing" id="investimento">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Investimento inicial</p>
+          <h2>Escolha o formato ideal para começar.</h2>
+        </div>
+        <div class="price-grid">
+          <article class="price-card">
+            <h3>Aula avulsa</h3>
+            <div class="price">R$ 60<small>/hora</small></div>
+            <p>Ideal para conhecer a mentoria, resolver dúvidas específicas ou revisar um conteúdo.</p>
+            <a class="btn js-whatsapp" href="#contato" data-plan="aula avulsa">Quero uma aula avulsa</a>
+          </article>
+          <article class="price-card featured">
+            <span class="tag">Mais vantajoso</span>
+            <h3>Pacote promocional</h3>
+            <div class="price">R$ 150<small>/3 horas</small></div>
+            <p>Três encontros para aprender com continuidade e desenvolver uma etapa completa do seu projeto.</p>
+            <a class="btn js-whatsapp" href="#contato" data-plan="pacote de 3 horas">Quero o pacote de 3 horas</a>
+          </article>
+        </div>
+        <p class="rule"><span aria-hidden="true">◷</span><span><strong>Regra do pacote:</strong> as três horas devem ser agendadas previamente e utilizadas em até 30 dias após a contratação.</span></p>
+      </div>
+    </section>
+
+    <section class="contact" id="contato">
+      <div class="wrap">
+        <div class="contact-card">
+          <div>
+            <p class="eyebrow">Pare de apenas assistir aulas.</p>
+            <h2>Comece a programar de verdade.</h2>
+            <p>Aprenda Java e Spring Boot com acompanhamento individual e projetos práticos.</p>
+          </div>
+          <div class="contact-actions">
+            <a class="btn js-whatsapp" href="#contato">Quero começar no Java agora</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-row">
+      <p><strong class="js-name">Professor: Seu Nome</strong> · Mentoria em Desenvolvimento Web</p>
+      <div class="socials">
+        <span class="email-social" aria-label="E-mail">
+          <!-- Coloque o ícone do Gmail no arquivo gmail.png, nesta mesma pasta. -->
+          <img class="social-icon" src="./gmail.png" alt="Gmail">
+          <span>ricardoprofessor45@gmail.com</span>
+        </span>
+        <a href="https://www.instagram.com/mentoria_web_java/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img class="social-icon" src="./instagram.png" alt="Instagram"></a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="notice" id="notice" role="status" aria-live="polite">A página está pronta. Para ativar o WhatsApp, substitua os dados provisórios no bloco CONFIG do arquivo.</div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
